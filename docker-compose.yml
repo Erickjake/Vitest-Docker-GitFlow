@@ -1,0 +1,14 @@
+services:
+  api:
+    # Substitua "./vitest-docker-ts" pelo nome EXATO da pasta onde está o backend
+    build: .
+    ports:
+      - "3000:3000"
+
+  # web:
+  #   # Substitua "./front-testes" pelo nome EXATO da pasta onde está o frontend
+  #   build: ./front-testes
+  #   ports:
+  #     - "5173:5173"
+  #   depends_on:
+  #     - api
